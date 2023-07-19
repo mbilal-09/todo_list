@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader-contianer">
+      <img src="../output-onlinegiftools.gif" alt="" srcset="" />
+    </div>
+
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="email" id="signIn-email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="signIn-password"
+                placeholder="Password"
+              />
+            </div>
+            <input
+              type="submit"
+              id="signIn-btn"
+              value="Login"
+              class="btn solid"
+            />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input id="register-email" type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input
+                id="register-password"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+            <input
+              type="submit"
+              id="register-btn"
+              class="btn"
+              value="Sign up"
+            />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Sign Up here to be one of us and get all latest updates related to
+              us
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+          </div>
+          <img src="" class="image imagesign-up" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              laboriosam ad deleniti.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">Sign in</button>
+          </div>
+          <img src="" class="image imagesign-in" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- todo -->
+
+    <div id="todo-list-container">
+      <div id="todo-container">
+        <div class="form">
+          <div class="form-ic">
+            <div class="textarea">
+              <input
+                autocomplete="off"
+                class="nameheader"
+                maxlength="20"
+                id="nametext"
+                placeholder="Title"
+              />
+              <textarea id="name" placeholder="Description"></textarea>
+              <div class="btn-container">
+                <a class="upperBtn">ABC</a>
+                <a class="lowerBtn">abc</a>
+              </div>
+            </div>
+
+            <div class="flex">
+              <button type="submit" id="submit" value="Add">Add</button>
+            </div>
+            <div class="msg">
+              Please enter all fields
+              <div class="close">Close</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="alertbox alerts">
+          <div class="messages">Are you sure?</div>
+          <div class="okaycancel-container">
+            <div class="okay">Yes, clear</div>
+            <div class="cancel">Cancel</div>
+          </div>
+        </div>
+
+        <div class="items-selector-container">
+          <div class="items-selector">
+            <a class="all active"
+              ><i style="margin-right: 10px" class="fa-solid fa-border-all"></i>
+              All</a
+            >
+            <a class="pending"
+              ><i style="margin-right: 10px" class="fa-solid fa-list-ul"></i
+              >Pending</a
+            >
+            <a class="completed"
+              ><i style="margin-right: 10px" class="fa-solid fa-list-check"></i
+              >Completed</a
+            >
+            <div class="border-bot"></div>
+            <div class="button"><button>Clear all</button></div>
+          </div>
+        </div>
+
+        <div class="list-container">
+          <ul class="dpflex" id="listall">
+            <div class="text texts">You don't have any note here</div>
+          </ul>
+          <ul class="dpnone" id="list-p">
+            <div class="textp texts">You don't have any pending note here</div>
+          </ul>
+          <ul class="dpnone" id="list-c">
+            <div class="textc texts">
+              You don't have any completed note here
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <button id="logout">Logout</button>
+
+    <script type="module" src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e2bce648c2.js"
+      crossorigin="hurphygames"
+    ></script>
+  </body>
+</html>

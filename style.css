@@ -126,43 +126,6 @@ form.sign-in-form {
   font-weight: 500;
 }
 
-.social-text {
-  padding: 0.7rem 0;
-  font-size: 1rem;
-  color: white;
-}
-
-.social-media {
-  display: flex;
-  justify-content: center;
-}
-
-.social-icon {
-  background: #233138;
-  backdrop-filter: blur( 1.0px );
-  -webkit-backdrop-filter: blur( 1.0px );
-  border-radius: 10px;
-  border: none;
-  height: 46px;
-  width: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0.45rem;
-  color: white;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: 0.3s;
-}
-
-.social-icon:hover {
-  color: #233138;
-  background-color: white;
-  transform: translateY(-0.25em);
-  border-color: white;
-}
-
 .btn {
   width: 150px;
   background: #233138;
